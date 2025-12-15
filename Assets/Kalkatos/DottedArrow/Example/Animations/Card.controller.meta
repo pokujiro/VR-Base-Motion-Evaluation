@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 13d44a0fc6cf8a849b6cda6b2e6ba0ec
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213121
+  packageName: Dotted Arrow
+  packageVersion: 1.1
+  assetPath: Assets/Kalkatos/DottedArrow/Example/Animations/Card.controller
+  uploadId: 481212

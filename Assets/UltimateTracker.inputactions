@@ -1,0 +1,302 @@
+{
+    "name": "UltimateTracker",
+    "maps": [
+        {
+            "name": "Tracker",
+            "id": "d95768e0-6e75-48ce-84c3-5e15c82c8845",
+            "actions": [
+                {
+                    "name": "P_Head",
+                    "type": "Value",
+                    "id": "dd2815ec-5803-46c1-9b52-d80855ffe591",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "P_RightHand",
+                    "type": "Value",
+                    "id": "cc2fdf63-d840-48ab-b815-ca4b2629e105",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "P_LeftHand",
+                    "type": "Value",
+                    "id": "a6dfeba9-106e-4e90-af85-e1ffb99046e9",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "P_Waist",
+                    "type": "Value",
+                    "id": "509df06c-fa90-4fc8-b0ed-9f20eefda437",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "P_RightFood",
+                    "type": "Value",
+                    "id": "8c6df4b3-90af-44d2-a0db-e711b5bcfb17",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "P_LeftFood",
+                    "type": "Value",
+                    "id": "f3a3634f-6494-4b05-be2b-ceb34eff8836",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "R_Head",
+                    "type": "Value",
+                    "id": "fffed2d5-82fb-44e0-ae2e-f8aa2d873d48",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "R_RightHand",
+                    "type": "Value",
+                    "id": "006004cb-1c57-4a85-91d1-d2908ffe2392",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "R_LeftHand",
+                    "type": "Value",
+                    "id": "b2804647-89fe-4ac7-b7af-4ab72c3a82fd",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "R_Waist",
+                    "type": "Value",
+                    "id": "30b3add6-e96e-401e-8fbc-b00c8f64676a",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "R_RightFood",
+                    "type": "Value",
+                    "id": "08b7c895-077d-490f-a2d6-1f3e91fdb436",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "R_LeftFood",
+                    "type": "Value",
+                    "id": "f7178bfc-bc18-45f5-881a-04143d166290",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "2f0adae5-d8ae-4d2f-88fb-f13528f8bb14",
+                    "path": "<OpenXRHmd>/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "P_Head",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "183e2cc3-84ec-455e-8e29-14c5884d8ad4",
+                    "path": "<XRController>{RightHand}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "P_RightHand",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "20b6fb07-2641-4737-9bcf-7d4078429dc5",
+                    "path": "<XRController>{LeftHand}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "P_LeftHand",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6ca48b12-c97b-4f8d-825f-b8369dd84411",
+                    "path": "<XRViveTracker>{Waist}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "P_Waist",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "27a20e5d-4083-44cc-8516-111bd067d8d1",
+                    "path": "<XRViveTracker>{Right Foot}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "P_RightFood",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a1cc015a-a9ed-45a5-ba2d-18adb0c15c82",
+                    "path": "<XRViveTracker>{Left Foot}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "P_LeftFood",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cb8ce1c2-cacb-4f6f-b693-e608b9807e00",
+                    "path": "<OpenXRHmd>/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "R_Head",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ae86d3d9-416b-4c97-b261-5b2dcb20fd1e",
+                    "path": "<XRController>{RightHand}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "R_RightHand",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9edacd11-539b-4b50-afaf-f95a49f4232a",
+                    "path": "<XRController>{LeftHand}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "R_LeftHand",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "810433b3-76cb-4321-b8a3-0943a503b0a2",
+                    "path": "<XRViveTracker>{Waist}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "R_Waist",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2fc28c56-2436-4628-aeb9-3620fe53cbfa",
+                    "path": "<XRViveTracker>{Right Foot}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "R_RightFood",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "09d5f2bc-1a8e-4f82-9e4d-da27613849b0",
+                    "path": "<XRViveTracker>{Left Foot}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "R_LeftFood",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Quest3",
+            "id": "f8d4bbe1-e53c-4039-ab2a-11ceb1d9af44",
+            "actions": [
+                {
+                    "name": "P_HMD",
+                    "type": "Value",
+                    "id": "a0ec2b1f-5c81-4490-9c54-558f5312bc93",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "R_HMD",
+                    "type": "Value",
+                    "id": "75f8ca77-08c3-43dc-875e-39158924fbaa",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "960c24a8-9827-4cac-a83c-0988c318691a",
+                    "path": "<XRHMD>/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "P_HMD",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0797c984-04a4-4b13-8b2c-f9cb407dd800",
+                    "path": "<XRHMD>/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "R_HMD",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

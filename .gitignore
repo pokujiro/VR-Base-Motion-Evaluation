@@ -97,3 +97,47 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# 個人的にGitに挙げたくないのもの ””.metaと基本セット””
+/[Aa]ssets/TestResult/*
+/[Aa]ssets/TestResult.meta
+# TextMesh Pro large font assets → ファイルが大きすぎるためGitに挙げれない
+/[Aa]ssets/NotoSansJP-VariableFont*SDF.asset
+/[Aa]ssets/NotoSansJP-VariableFont*SDF.asset.meta
+# Ignore Unity Samples (re-importable)
+Assets/Samples/
+Assets/Samples.meta
+# Unity Samples & Tutorials
+Assets/Samples/
+Assets/Samples.meta
+Assets/TutorialInfo/
+Assets/TutorialInfo.meta
+
+# SDKs / Plugins (reinstallable via UPM)
+Assets/VIVE/
+Assets/VIVE.meta
+Assets/XR/
+Assets/XR.meta
+Assets/XRI/
+Assets/XRI.meta
+Assets/UniGLTF/
+Assets/UniGLTF.meta
+Assets/VRM10/
+Assets/VRM10.meta
+# SteamVR用
+# Assets/StreamingAssets/
+# Assets/StreamingAssets.meta
+Assets/StreamingAssets/**/Logs/
+Assets/StreamingAssets/**/Recordings/
+Assets/StreamingAssets/**/Temp/
+Assets/StreamingAssets/**/Cache/
+
+# Experiment logs / generated data
+Assets/Data/
+Assets/Data.meta
+Assets/Test/
+Assets/Test.meta
+Assets/TestResult/
+Assets/TestResult.meta
+
+

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: c8699da0db1db2d41a92d79e9ff033f7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213121
+  packageName: Dotted Arrow
+  packageVersion: 1.1
+  assetPath: Assets/Kalkatos/DottedArrow/Example/Scripts/CombatManager.cs
+  uploadId: 481212

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0f213d3420d6659419b9f55befae1595
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213121
+  packageName: Dotted Arrow
+  packageVersion: 1.1
+  assetPath: Assets/Kalkatos/DottedArrow/Example/Animations/FlyUp.anim
+  uploadId: 481212
