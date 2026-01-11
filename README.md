@@ -15,7 +15,8 @@
 ## デモ (Demonstration)
 実際のシステムでは、お手本動作（緑のボーン）とユーザーの動作（白のボーン）を比較し、誤差のある部位をリアルタイムで色付けしてフィードバックします。 
 
-![demo](assets/Demo.png)  
+<img width="1300" height="731" alt="スクリーンショット 2025-07-06 155718" src="https://github.com/user-attachments/assets/7cbe0cbf-652b-48c5-b132-2fe5e92a18bc" />
+ 
 
 ## 技術的ハイライト (Technical Highlights)
 ### 1. 体格差補正 
