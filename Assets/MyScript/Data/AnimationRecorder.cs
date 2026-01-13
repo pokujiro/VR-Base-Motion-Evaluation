@@ -9,7 +9,7 @@ using UnityEngine;
 public class AnimationRecorder : MonoBehaviour
 {
     [Header(" Setting ")]
-    public Animator animator; // アニメーションを再生しているAnimator
+    public Animator animator; // アニメーションを再生しているAnimator(アバター)
     public Animator replayAnimator;  // リプレイするアバター
     public DisplayBonesAsObjects displayBoneAsObject; // Boneの色を変更
     public BoneConnector boneConnector; // BoneConnector への参照
@@ -114,14 +114,16 @@ public class AnimationRecorder : MonoBehaviour
         HumanBodyBones.RightFoot
     };
 
+    /// <summary>
+    /// 初期化　
+    /// ・ボーンの色を色にする
+    /// </summary>
     private void Start()
     {
         // 基準データの記録時間をロード
         //recordingDuration = PlayerPrefs.GetFloat(RecordingDurationKey, 0f);  // PlayerPrefs.GetFloat() は保存されているデータを読み込むメソッドです
                                                                              // 第1引数 RecordingDurationKey: データを識別するためのキー
                                                                              // 第2引数 0f: データが存在しない場合のデフォルト値（この場合は0秒）
-
-
         foreach (HumanBodyBones bone in importantBones)
         {
             boneColors[bone] = Color.white; // デフォルトは白

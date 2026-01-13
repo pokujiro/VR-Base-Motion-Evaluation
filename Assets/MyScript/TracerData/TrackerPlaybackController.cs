@@ -12,7 +12,7 @@ public class TrackerPlaybackController : MonoBehaviour
     [SerializeField] private TrackerDataPlayer trackerDataPlayer; // TrackerDataPlayerの参照
     [SerializeField] private BoneConnector boneConnector;
 
-    [Header("")]
+    [Header("ReplayAsObject")]
     public ReplayAsObject ReplayAvatar;
 
     [Header("Tracker Recorder and Saver")]
@@ -62,19 +62,20 @@ public class TrackerPlaybackController : MonoBehaviour
     {
         // コンポーネントの確認
         if (!ValidateComponents()) return;
+        // 評価モードなら recordingDuration を取得
         if (shouldEvaluate)
         {
+            // ダンス時間の記録
             recordingDuration = dataRecorder.GetRecordingDuration(); // 基準データの記録時間を取得　(trackerから取得)
             Debug.Log($"recordingDuration{recordingDuration}");
-            // 最初に取らないからいらない
-            //  boneRecorder.SetReferenceData(boneSaver.LoadReferenceData());
         }
         if (finalEvaluate)
         {
+            // 普通の評価フラグもオンとする
             shouldEvaluate = true;
         }
 
-        // GameObject に LineRenderer を追加
+        // キャリブレーション用に腕間ライン（LineRenderer）を追加
         lineRenderer = gameObject.AddComponent<LineRenderer>();
         lineRenderer.startWidth = 0.02f; // 線の太さを設定
         lineRenderer.endWidth = 0.02f;
@@ -94,9 +95,8 @@ public class TrackerPlaybackController : MonoBehaviour
                 lineRenderer.SetPosition(1, rightArmTracker.position);
             }
         }
-        else
+        else // キャリブレーション完了後はラインを非表示
         {
-            // キャリブレーション完了後はラインを非表示
             lineRenderer.enabled = false;
         }
 
@@ -126,23 +126,21 @@ public class TrackerPlaybackController : MonoBehaviour
             }
         }
 
-        // 記録しているとき
-        if (isRecording)　
+        if (isRecording)　// 記録しているとき
         {
-            // Debug.Log($"🔴 記録中... Time={Time.time:F4}");
-            if (shouldEvaluate)
+            if (shouldEvaluate) // 評価モードの時
             {
-                if (isPracticeModeDone)
+                if (isPracticeModeDone)　//　2回目以降 → Tracker + Bone を記録
                 {
                     dataRecorder.RecordFrame(); // 経過時間が記録間隔を超えた場合に記録（Tracker）
                     boneRecorder.ProcessRecording(Time.deltaTime);　// 経過時間が記録間隔を超えた場合に記録（Bone）
                 }
-                else             // リプレイの記録　ボーンのみ
+                else    // 1回目（基準取得） → リプレイのBoneのみ記録
                 {
                     boneRecorder.ProcessReplayRecording(Time.deltaTime);
                 }
             }
-            else  // 普通の記録の時は　トラッカーだけ
+            else  // 非評価モードの時は　トラッカーだけ
             {
                 dataRecorder.RecordFrame(); // フレーム記録を手動で呼び出し 
             }
@@ -239,6 +237,7 @@ public class TrackerPlaybackController : MonoBehaviour
             }
             if (finalEvaluate)
             {
+                // ボーンとラインを非表示にする
                 ReplayAvatar.HideBonesAndLines();
             }
             StartCoroutine(StartRecordingWithDelay());
